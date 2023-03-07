@@ -1,0 +1,461 @@
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    font-display: medium 500px;
+    font-weight: medium 500;
+    box-sizing: border-box;
+  }
+
+  html, body{
+    display: flexbox;
+    margin: 0;
+    background: #e3e3e3;
+  }
+
+
+
+  header{
+    margin-left: -26px;
+    flex-wrap: wrap;
+    display: flex;
+    color: rgb(20, 20, 20);
+    height: calc(100vh - 65PX);
+    align-items: center;
+
+
+    
+    
+
+  }
+
+
+
+
+
+  header h2{
+    
+    background: linear-gradient(0.9turn, #47BDFF, #5d00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -120px;
+    flex-wrap: wrap;
+    display: inline-flexbox;
+    font-size: 70px;
+
+  }
+
+  header p{
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 22px;
+  }
+
+  
+
+  HEADER .container{
+    width: 50%;
+    height: fit-content;
+    padding: 0 73px;
+
+  }
+
+ nav{
+  background-color: #e3e3e3;
+  box-shadow: 0px 2px 2px #565656;
+  justify-content: space-between;
+  position: sticky;
+  display: flex;
+  height: 65px;
+  align-items: center;
+  padding: 0 65px;
+  top: 0;
+ }
+
+
+ nav img{
+  margin-top: 0px;
+
+  width: 170px;
+  height: 58px;
+ }
+
+
+ 
+ nav ul a{
+  font-size: 24px;
+  background: linear-gradient(0.3turn, #000000, #000000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 35px;
+ }
+
+
+
+ 
+
+
+
+
+  .button1{
+
+    font-weight: bold;
+    margin-top: 32px;
+    position: relative;
+    width:  310px;
+    background: linear-gradient(0.9turn, #47BDFF, #5d00ff);
+    background-clip: text;
+    border: 0;
+    border-radius: 16px;
+    height: 44px;
+    padding: 1px 2px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+  }
+
+  .button1::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #ffffff75, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px) skew(-20deg);
+  }
+
+
+  .button1:hover::before{
+    transform: translateX(300px) skew(-20deg);
+  }
+
+  .button1:hover{
+    transform: scale(1.125);  
+    background: linear-gradient(0.9turn, #47BDFF, #5d00ff);
+    background-clip: text;
+  }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    header .container{
+      margin-left: -25px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+ }
+
+ @media screen and (max-width: 1000px) {
+  header .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  header{
+    min-width: 100%;
+    align-items: center;
+
+    
+}
+
+@media screen and (max-width: 468px){
+   header{
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   }
+}
+
+
+
+}
+ section.section1{
+
+
+
+  width: 100%;
+  display: flexbox;
+  background: #e3e3e3;
+  padding: 270px;
+  display: flex;
+  height: calc(100vh - 0px);
+
+}
+
+section.containermain{
+  width: 59%  ;
+}
+
+.containermain h1{
+  background: linear-gradient(0.9turn, #47BDFF, #5d00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  display: flexbox;
+  padding: 16px 46px;
+  font-size: 38px;
+  font-weight: 400;
+  border-right: 1px solid;
+   
+  width: 15ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(16),
+  blinking 0.4s infinite step-end alternate;
+}
+@keyframes typing{
+  from  {
+      width: 0;
+  }
+}
+
+@keyframes blinking{
+50%{
+  border-color: transparent;
+}
+}
+
+
+section p{
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+  section.section1{
+    padding: 13px;
+    height: 100vh;
+    display: flexbox;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  section.section1{
+    padding: 13px;
+    margin-bottom: 20px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  section.section1{
+  
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+ section .services{
+  color: black;
+  width: 100%;
+  display: flex;
+  background: #e3e3e3;
+  padding: 130px;
+  display: inline-flex;
+  flex-direction: column;
+  height: calc(100vh - 0px);
+
+
+ } 
+
+
+
+
+ @media screen and (max-width: 768px){
+  nav img{
+    display: none;
+  }
+
+  nav ul a{
+    display: none;
+  }
+
+
+ }
+ @media screen and (max-width: 468px){
+  nav{
+    display: none;
+  }
+ }
+ @media screen and (max-width: 1000px){
+  nav {
+    display: none;
+  }
+
+  nav ul a{
+    display: none;
+    margin: 0 auto 30px;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+    padding: 0 41px;
+  }
+
+  nav ul{
+    word-spacing: 3px;
+  }
+ }
+
+
+
+
+
+
+ .services_marco h1{
+  margin-left: 0px auto;
+  background: linear-gradient(0.9turn, #fff200, #5d00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 27px;
+   
+ }
+
+ .services_marco h2{
+  background: linear-gradient(0.9turn, #fff200, #5d00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+
+ .frontend img{
+  display: flex;
+
+  width: 90%;
+  height: 40%;
+ }
+
+
+
+ 
+
+ .frontend p{
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+ }
+
+ .services_marco{
+
+  align-items: center;
+  padding: 50px 70px;
+  width: 100%;
+  height: calc(100vh - 65px);
+  text-align: center;
+ }
+
+
+
+.services_marco img{
+  width: 200px;
+  height: 70%;
+}
+
+.servicescont{
+  display: flex;
+}
+
+
+.services_marco .servicescont .servicesblock{
+  justify-content: space-between;
+  max-width: 500px;
+  background: #fff8f8;
+  border: 2px solid #ffe5e5;
+  box-shadow: 0px 1px 7px #58006e;
+  height: 100%;
+  border-radius: 25px;
+  padding: 17px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px){
+   .services_marco{
+    padding: 80px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .servicescont{
+    flex-wrap: wrap ;
+  }
+
+  .servicesblock p{
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 1000px){
+  .services_marco{
+   text-align: center;
+   height: 100vh;  
+   display: flex;
+   align-items: center;
+
+ }
+
+ .servicescont{
+  padding: 5px;
+   flex-wrap:wrap ;
+   
+ }
+
+ .services_marco h1{
+  margin-left: 60px;
+
+  margin-bottom: -20px;
+ }
+
+}
+
+@media screen and (max-width: 468px){
+  .services_marco{
+    margin-left: -25px;
+    text-align: center;
+    height: 100vh;  
+    display: flexbox;
+    align-items: center;
+  }
+}
